@@ -6,17 +6,20 @@
   <title>E-book Usaha Jahit - Landing Page</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 <style>
 /* =============================== FAQ =============================== */
 .faq {
   padding: 20px 5%;
   text-align: center;
-  background-color: #e9f7ef;
+  background-color: #f0f9ff;
   border-radius: 10px;
 }
 
 .faq h2{
     margin-bottom: 25px;
+    font-family: 'Montserrat';
+    font-weight: 800;
 }
 
 .faq-item {
@@ -27,17 +30,19 @@
 .faq-question {
   width: 100%;
   padding: 16px;
-  background: #27ae60;
-  color: white;
+  background: #ffffff;
+  color: black;
   border: none;
   font-size: 18px;
   font-weight: 700;
+  
   text-align: left;
   border-radius: 10px;
   cursor: pointer;
   position: relative;
   margin-bottom: 5px;
   transition: 0.3s;
+  font-family: 'Quicksand';
 }
 
 /* IKON + / - DI SEBELAH KANAN */
@@ -62,11 +67,12 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.4s;
-  background: #ffffff;
+  background: #f0f9ff;
   padding: 0 16px;
   border-radius: 0 0 10px 10px;
   color: #333;
   text-align: left;
+  font-family: 'Quicksand';
 }
 </style>
 
@@ -82,7 +88,7 @@
 
   <div class="faq-item">
     <button class="faq-question">Apakah bisa dipakai untuk 
-    mulai usaha?</button>
+    mulai<br> usaha?</button>
     <div class="faq-answer"><p>Ya! Kamu akan belajar langkah-langkah membuka jasa menjahit.</p></div>
   </div>
 
