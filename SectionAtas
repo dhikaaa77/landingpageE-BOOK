@@ -6,11 +6,11 @@
   <title>E-book Usaha Jahit - Landing Page</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Quicksand', sans-serif;
       background: #ffffff;
       color: #333;
     }
@@ -22,7 +22,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 80px 10%;
-      background: #e9f7ef;
+      background: linear-gradient(to bottom, #e9f7ef, #f9fafb);
       margin-top: 0px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
@@ -33,6 +33,7 @@
         font-weight: 800;
         margin-bottom: 0px;
         font-size: 18px;
+        font-family: sans-serif;
     }
 
     .hero-content h1 {
@@ -42,10 +43,12 @@
       text-align: center;
       line-height: 1.2;
       margin-bottom: 10px;
+      font-family: sans-serif;
     }
     
     .hero-content p {
         text-align: center;
+        font-family: 'Quicksand';
     }
     
     .hero-content h5{
@@ -54,6 +57,7 @@
         color: #707684;
         margin-top: 0px;
         text-align: center;
+        font-family: 'Quicksand';
     }
     
     .hero-image {
@@ -87,6 +91,7 @@
       display: block;           
       margin-left: auto;        
       margin-right: auto;
+      font-family: 'Montserrat';
     }
 
     .cta-btn:hover {
@@ -98,7 +103,7 @@
     .problems {
       padding: 40px 10%;
       text-align: center;
-      background: #f6fff4;
+      background: #f9fafb;
       border-radius: 12px;
       margin: 20px 0;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -106,9 +111,10 @@
 
     .problems h2 {
       margin-bottom: 20px;
-      font-weight: 800;
+      font-weight: 900;
       font-size: 28px;
-      color: #14663b;
+      color: #0d1b2a;
+      font-family: 'Montserrat';
     }
     
     .problems h5 {
@@ -117,6 +123,7 @@
         color: #707684;
         margin-bottom: 10px;
         text-align: center;
+        font-family: 'Quicksand';
     }
 
     .problem-list {
@@ -126,7 +133,49 @@
       justify-content: center;
     }
 
-    .problem-card {
+    .problem-card1 {
+      width: 500px;
+      min-height: 0px;
+      background: #fff9e0;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 8px 22px rgba(6,86,37,0.08);
+      border: 1px solid #d8f2db;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .problem-card2 {
+      width: 500px;
+      min-height: 0px;
+      background: #ebf8ff;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 8px 22px rgba(6,86,37,0.08);
+      border: 1px solid #d8f2db;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .problem-card3 {
+      width: 500px;
+      min-height: 0px;
+      background: #ebfcec;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 8px 22px rgba(6,86,37,0.08);
+      border: 1px solid #d8f2db;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .problem-card4 {
       width: 500px;
       min-height: 0px;
       background: linear-gradient(135deg,#ffffff,#ecfff2);
@@ -140,8 +189,38 @@
       gap: 8px;
       transition: transform .25s, box-shadow .25s;
     }
+    .problem-card5 {
+      width: 500px;
+      min-height: 0px;
+      background: #e6eebe;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 8px 22px rgba(6,86,37,0.08);
+      border: 1px solid #d8f2db;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: transform .25s, box-shadow .25s;
+    }
 
-    .problem-card:hover {
+    .problem-card1:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(6,86,37,0.12);
+    }
+    .problem-card2:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(6,86,37,0.12);
+    }
+    .problem-card3:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(6,86,37,0.12);
+    }
+    .problem-card4:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(6,86,37,0.12);
+    }
+    .problem-card5:hover {
       transform: translateY(-6px);
       box-shadow: 0 14px 36px rgba(6,86,37,0.12);
     }
@@ -154,25 +233,94 @@
       align-items: center;
       justify-content: center;
       border-radius: 12px;
-      background: #e8fff1;
       color: #14663b;
-      margin-bottom: 8px;
+      margin-bottom: 0px;
     }
 
-    .problem-card h3 {
+    .problem-card1 h3 {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 20px;
       margin: 0;
-      color: #0f5132;
+      color: #0d1b2a;
       text-align: center;
+      font-family: 'Quicksand';
     }
 
-    .problem-card p {
+    .problem-card1 p {
       margin: 0;
       font-size: 14px;
       color: #2f5f46;
       line-height: 1.4;
       text-align: center;
+      font-family: 'Quicksand';
+    }
+    .problem-card2 h3 {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0;
+      color: #0d1b2a;
+      text-align: center;
+      font-family: 'Quicksand';
+    }
+
+    .problem-card2 p {
+      margin: 0;
+      font-size: 14px;
+      color: #2f5f46;
+      line-height: 1.4;
+      text-align: center;
+      font-family: 'Quicksand';
+    }
+    .problem-card3 h3 {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0;
+      color: #0d1b2a;
+      text-align: center;
+      font-family: 'Quicksand';
+    }
+
+    .problem-card3 p {
+      margin: 0;
+      font-size: 14px;
+      color: #2f5f46;
+      line-height: 1.4;
+      text-align: center;
+      font-family: 'Quicksand';
+    }
+    .problem-card4 h3 {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0;
+      color: #0d1b2a;
+      text-align: center;
+      font-family: 'Quicksand';
+    }
+
+    .problem-card4 p {
+      margin: 0;
+      font-size: 14px;
+      color: #2f5f46;
+      line-height: 1.4;
+      text-align: center;
+      font-family: 'Quicksand';
+    }
+    .problem-card5 h3 {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0;
+      color: #0d1b2a;
+      text-align: center;
+      font-family: 'Quicksand';
+    }
+
+    .problem-card5 p {
+      margin: 0;
+      font-size: 14px;
+      color: #2f5f46;
+      line-height: 1.4;
+      text-align: center;
+      font-family: 'Quicksand';
     }
 
     /* ================================= SOLUTION (UPDATED) ================================= */
@@ -188,6 +336,7 @@
       font-weight: 800;
       margin-bottom: 5px;
       color: #14663b;
+      font-family: 'Montserrat';
     }
 
     .solution p {
@@ -195,6 +344,7 @@
       max-width: 680px;
       margin: 0 auto 18px;
       color: #3b5f49;
+      font-family: 'Quicksand';
     }
 
     .solution-scroll-wrapper {
@@ -223,11 +373,12 @@
     }
 
     .solution-card h3 {
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 20px;
+      font-weight: 800;
       color: #125a38;
       margin: 0;
       text-align: center;
+      font-family: 'Quicksand';
     }
 
     .solution-card p {
@@ -256,6 +407,7 @@
       font-weight: 800;
       margin-bottom: 25px;
       color: #0d1b2a;
+      font-family: 'Montserrat';
     }
 
     .testimonial-scroll {
@@ -296,18 +448,21 @@
       align-items: center;
       font-size: 22px;
       font-weight: 700;
+      font-family: 'Quicksand';
     }
 
     .testi-info h3 {
       font-size: 18px;
       font-weight: 700;
       margin: 0;
+      font-family: 'Quicksand';
     }
 
     .testi-info p {
       margin: 0;
       font-size: 14px;
       color: #6b7280;
+      font-family: 'Quicksand';
     }
 
     .testi-stars {
@@ -320,13 +475,15 @@
       font-size: 15px;
       color: #2f3640;
       line-height: 1.5;
+      font-family: 'Quicksand';
+      font-style: italic;
     }
 
    /* ================================= PRICING (COMPACT VERSION) ================================= */
 
     .pricing-modern {
       padding: 40px 8%;
-      background: #f0fff4;
+      background: #ffffff;
       text-align: center;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
@@ -334,12 +491,14 @@
     .pricing-modern h2 {
         text-align: center;
         margin-bottom: 10px;
+        font-weight: 800;
+        font-family: 'Montserrat';
     }
     
     /* BOX UMUM */
     .pricing-box {
       position: relative;
-      background: #ffffff;
+      background: #f0fff4;
       border-radius: 18px;
       padding: 35px 25px 25px 25px;
       margin: 40px auto 25px auto;
@@ -363,6 +522,7 @@
       padding: 6px 18px;
       color: white;
       font-weight: 800;
+      font-family: 'Quicksand';
       border-radius: 18px;
       font-size: 12px;
       box-shadow: 0 4px 10px rgba(255,136,0,0.3);
@@ -374,12 +534,14 @@
       font-weight: 800;
       color: #145a32;
       margin: 0 0 4px;
+      font-family: 'Montserrat';
     }
     
     .pricing-subtitle {
       font-size: 13px;
       color: #555;
       margin-bottom: 10px;
+      font-family: 'Quicksand';
     }
     
     /* PRICE */
@@ -396,6 +558,7 @@
       text-decoration: line-through;
       margin: 0;
       text-align: center;
+      font-family: 'Montserrat';
     }
     
     .final-price {
@@ -405,6 +568,7 @@
       margin: 3px 0 0;
       line-height: 1;
       text-align: center;
+      font-family: 'Montserrat';
     }
     
     /* FEATURES */
@@ -413,6 +577,7 @@
       margin: 10px 0;
       font-size: 14px;
       line-height: 1.45;
+      font-family: 'Quicksand';
     }
     
     .features-list p {
@@ -422,6 +587,7 @@
       gap: 8px;
       flex-direction: column;
       text-align: center;
+      font-family: 'Quicksand';
     }
     
     .features-list .val {
@@ -449,6 +615,7 @@
       cursor: pointer;
       margin-top: 10px;
       transition: .25s;
+      font-family: 'Montserrat';
     }
     
     .btn-premium:hover {
@@ -465,32 +632,39 @@
       padding: 4px 8px;
       border-radius: 8px;
       display: inline-block;
+      font-family: 'Quicksand';
     }
     
     /* BASIC BOX */
     .basic-box {
       border: 1px solid #ddd;
       margin-top: 40px;
+      background: #ffffff;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
     .basic-box h2 {
       font-size: 18px;
       font-weight: 800;
+      font-family: 'Montserrat';
+      color: #0d1b2a;
     }
     
     .price-tag-basic .final-price {
       color: #555;
       font-size: 28px;
+      font-family: 'Montserrat';
     }
     
     .features-list.basic p {
       color: #666;
+      font-family: 'Quicksand';
     }
     
     .features-list.basic p.missing {
       opacity: 0.65;
       text-decoration: line-through;
+      font-family: 'Quicksand';
     }
     
     /* BUTTON BASIC */
@@ -506,6 +680,7 @@
       margin-top: 10px;
       cursor: pointer;
       transition: .3s;
+      font-family: 'Montserrat';
     }
     
     .btn-basic:hover {
@@ -522,10 +697,9 @@
       right: 10px;
       background: #e6eebe;
       padding: 14px 18px;
-      width: 300px;
+      width: 250px;
       box-shadow: 0 3px 12px rgba(0,0,0,0.12);
       border-radius: 14px;
-      font-family: 'Quicksand', sans-serif;
       transition: 0.6s ease;
       z-index: 9999;
       opacity: 0;
@@ -541,6 +715,7 @@
       display: flex;
       gap: 12px;
       align-items: flex-start;
+      font-family: 'Quicksand';
     }
     
     .notif-avatar {
@@ -564,6 +739,7 @@
       font-weight: 700;
       font-size: 16px;
       color: #333;
+      font-family: 'Quicksand';
     }
     
     .notif-job {
@@ -571,6 +747,7 @@
       font-size: 13px;
       color: #777;
       font-style: italic;
+      font-family: 'Quicksand';
     }
     
     .notif-action {
@@ -578,12 +755,14 @@
       font-size: 14px;
       color: #222;
       font-weight: 700;
+      font-family: 'Quicksand';
     }
     
     .notif-time {
       margin-top: 2px;
       font-size: 13px;
       color: #555;
+      font-family: 'Quicksand';
     }
 
     @media(max-width: 768px) {
@@ -621,31 +800,31 @@
 
     <div class="problem-list">
 
-      <div class="problem-card">
+      <div class="problem-card1">
         <div class="problem-icon">🤔</div>
         <h3>Bingung Mulai Dari Mana</h3>
         <p>Tidak tahu alat apa saja, langkah apa yang harus dilakukan, dan bagaimana memulai secara bertahap.</p>
       </div>
 
-      <div class="problem-card">
+      <div class="problem-card2">
         <div class="problem-icon">💸</div>
         <h3>Takut Modal Besar</h3>
         <p>Banyak yang mengira memulai usaha jahit membutuhkan biaya besar padahal tidak.</p>
       </div>
 
-      <div class="problem-card">
+      <div class="problem-card3">
         <div class="problem-icon">🧵</div>
         <h3>Belum Bisa Menjahit</h3>
         <p>Banyak pemula takut salah, padahal dasar menjahit dapat dipelajari lewat latihan kecil.</p>
       </div>
 
-      <div class="problem-card">
+      <div class="problem-card4">
         <div class="problem-icon">📢</div>
         <h3>Tidak Tahu Cara Promosi</h3>
         <p>Bingung cara mendapatkan pelanggan pertama atau bagaimana menawarkan jasa.</p>
       </div>
 
-      <div class="problem-card">
+      <div class="problem-card5">
         <div class="problem-icon">⏳</div>
         <h3>Keterbatasan Waktu</h3>
         <p>Sulit membagi waktu antara rumah, kerja, dan belajar menjahit.</p>
