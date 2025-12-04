@@ -3,151 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-book Usaha Jahit - Landing Page</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 <style>
 /* =============================== FAQ =============================== */
-.faq {
-  padding: 20px 5%;
-  text-align: center;
-  background-color: #f0f9ff;
-  border-radius: 10px;
-}
-
-.faq h2{
-    margin-bottom: 25px;
-    font-family: 'Montserrat';
-    font-weight: 800;
-}
-
-.faq-item {
-  margin-bottom: 10px;
-}
-
-/* BUTTON FAQ */
-.faq-question {
-  width: 100%;
-  padding: 16px;
-  background: #ffffff;
-  color: black;
-  border: none;
-  font-size: 18px;
-  font-weight: 700;
-  
-  text-align: left;
-  border-radius: 10px;
-  cursor: pointer;
-  position: relative;
-  margin-bottom: 5px;
-  transition: 0.3s;
-  font-family: 'Quicksand';
-}
-
-/* IKON + / - DI SEBELAH KANAN */
-.faq-question::after {
-  content: "+";
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 22px;
-  font-weight: 900;
-  transition: 0.3s;
-}
-
-/* Saat dibuka → jadi minus */
-.faq-question.active::after {
-  content: "−";
-}
-
-/* Jawaban */
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.4s;
-  background: #f0f9ff;
-  padding: 0 16px;
-  border-radius: 0 0 10px 10px;
-  color: #333;
-  text-align: left;
-  font-family: 'Quicksand';
-}
-</style>
+    .faq {
+      padding: 20px 5%;
+      text-align: center;
+      background-color: #f0f9ff;
+      border-radius: 10px;
+    }
+    
+    .faq h2{
+        margin-bottom: 25px;
+        font-family: 'Montserrat';
+        font-weight: 800;
+    }
+    
+    .faq-item {
+      margin-bottom: 10px;
+    }
+    
+    /* BUTTON FAQ */
+    .faq-question {
+      width: 100%;
+      padding: 16px;
+      background: #5E96C3;
+      color: white;
+      border: none;
+      font-size: 18px;
+      font-weight: 700;
+    
+      text-align: left;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 5px;
+      transition: 0.3s;
+      font-family: 'Quicksand';
+      padding-left: 50px; /* Ruang untuk emoji ❓ */
+    }
+    
+    /* Ikon ❓ di kiri */
+    .faq-question::before {
+      content: "❓";
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      color: white; /* Mengikuti warna font seperti permintaan */
+    }
+    
+    /* IKON + / - DI SEBELAH KANAN */
+    .faq-question::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      font-weight: 900;
+      transition: 0.3s;
+    }
+    
+    .faq-question.active::after {
+      content: "−";
+    }
+    
+    /* Jawaban */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.4s;
+      background: #e8f7ff;
+      padding: 0 16px;
+      border-radius: 0 0 10px 10px;
+      color: #333;
+      text-align: left;
+      font-family: 'Quicksand';
+    }
+    </style>
+    </head>
 
 <body>
-    <!-- ================= FAQ SECTION ================= -->
+
+<!-- ================= FAQ SECTION ================= -->
 <section class="faq">
-  <h2>❓ FAQ Bisnis Jahit</h2>
+  <h2>❓ FAQ Seputar E-book Jahit</h2>
 
+  <!-- 1 -->
   <div class="faq-item">
-    <button class="faq-question">Apakah cocok untuk pemula?</button>
-    <div class="faq-answer"><p>Tentu! E-book ini dirancang untuk pemula 100%.</p></div>
+    <button class="faq-question">Apa benar e-book ini bisa bikin <br>saya bisa menjahit dari nol?</button>
+    <div class="faq-answer"><p>Ya! E-book ini dibuat untuk pemula total. Bahkan jika kamu belum pernah pegang mesin jahit sekalipun.</p></div>
   </div>
 
+  <!-- 2 -->
   <div class="faq-item">
-    <button class="faq-question">Apakah bisa dipakai untuk 
-    mulai<br> usaha?</button>
-    <div class="faq-answer"><p>Ya! Kamu akan belajar langkah-langkah membuka jasa menjahit.</p></div>
+    <button class="faq-question">Apakah materi di dalam e-book <br>mudah dipahami?</button>
+    <div class="faq-answer"><p>Sangat mudah! Penjelasan dibuat sederhana, lengkap dengan contoh visual yang bisa langsung dipraktikkan.</p></div>
   </div>
 
+  <!-- 3 -->
   <div class="faq-item">
-    <button class="faq-question">Apa harus punya mesin jahit mahal?</button>
-    <div class="faq-answer"><p>Tidak. Ada rekomendasi mesin murah & awet.</p></div>
+    <button class="faq-question">Kalau saya tidak punya mesin <br>jahit, apakah tetap bisa belajar?</button>
+    <div class="faq-answer"><p>Bisa. Ada rekomendasi alat murah termasuk pilihan mesin jahit di bawah 1 juta yang awet untuk pemula.</p></div>
   </div>
 
+  <!-- 4 -->
   <div class="faq-item">
-    <button class="faq-question">Apakah e-book bisa dibaca lewat HP?</button>
-    <div class="faq-answer"><p>Bisa, e-book dalam bentuk PDF.</p></div>
+    <button class="faq-question">Apakah e-book ini bisa membantu<br> saya dapat pelanggan?</button>
+    <div class="faq-answer"><p>Ya! Ada materi khusus tentang promosi, menentukan harga, dan cara mendapatkan pelanggan pertama dari HP saja.</p></div>
   </div>
 
+  <!-- 5 -->
   <div class="faq-item">
-    <button class="faq-question">Apakah saya bisa belajar meskipun tidak punya banyak waktu?</button>
-    <div class="faq-answer">
-      <p>Ya, bisa! Materi e-book dibuat ringkas dan bisa dipelajari sedikit demi sedikit.</p>
-    </div>
+    <button class="faq-question">E-book ini dalam bentuk apa? PDF <br>atau video?</button>
+    <div class="faq-answer"><p>Materi utama berbentuk PDF. Ada bonus tambahan berupa video tutorial pendek.</p></div>
   </div>
 
+  <!-- 6 -->
   <div class="faq-item">
-    <button class="faq-question">Apakah saya perlu pengalaman menjahit sebelumnya?</button>
-    <div class="faq-answer">
-      <p>Tidak perlu. E-book ini dapat diikuti tanpa pengalaman sama sekali.</p>
-    </div>
+    <button class="faq-question">Apakah setelah membeli ada pendampingan?</button>
+    <div class="faq-answer"><p>Untuk paket premium, kamu akan masuk ke grup diskusi untuk tanya jawab dasar.</p></div>
   </div>
 
+  <!-- 7 -->
   <div class="faq-item">
-    <button class="faq-question">Apakah alat-alat yang direkomendasikan mahal?</button>
-    <div class="faq-answer">
-      <p>Tidak. Semua rekomendasi disesuaikan untuk pemula dengan budget minim.</p>
-    </div>
+    <button class="faq-question">Kalau saya sibuk, apakah masih <br>bisa belajar?</button>
+    <div class="faq-answer"><p>Sangat bisa! Materinya pendek-pendek dan bisa dipelajari hanya 10–15 menit per hari.</p></div>
   </div>
 
+  <!-- 8 -->
   <div class="faq-item">
-    <button class="faq-question">Bisakah saya memulai usaha menjahit hanya dari rumah?</button>
-    <div class="faq-answer">
-      <p>Bisa! Banyak pemula memulai dari ruang kecil di rumah tanpa toko fisik.</p>
-    </div>
+    <button class="faq-question">Apakah ada garansi kalau materinya tidak cocok?</button>
+    <div class="faq-answer"><p>Tentu! Ada Garansi 100% Uang Kembali jika materi tidak sesuai atau tidak bermanfaat.</p></div>
   </div>
 
 </section>
 
-
 <!-- ================= FAQ JAVASCRIPT ================= -->
-<script>
-document.querySelectorAll(".faq-question").forEach(button => {
-  button.addEventListener("click", () => {
-    const answer = button.nextElementSibling;
+    <script>
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+    
+        button.classList.toggle("active");
+    
+        if (button.classList.contains("active")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+          answer.style.maxHeight = "0";
+        }
+      });
+    });
+    </script>
 
-    button.classList.toggle("active");
-
-    if (button.classList.contains("active")) {
-      answer.style.maxHeight = answer.scrollHeight + "px";
-    } else {
-      answer.style.maxHeight = "0";
-    }
-  });
-});
-</script>
 </body>
 </html>
